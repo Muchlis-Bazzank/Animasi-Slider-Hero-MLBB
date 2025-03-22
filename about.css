@@ -1,0 +1,204 @@
+/*:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}*/
+
+/*html {
+  scroll-behavior: smooth;
+}*/
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a2a;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* navbar */
+header {
+  width: 1200px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+
+.active {
+  color: orange;
+}
+
+.active::after {
+  content: "";
+  display: block;
+  transform: scaleX(1);
+}
+
+header nav {
+  display: flex;
+  gap: 3rem;
+  border-bottom: 1px solid orange;
+  position: fixed;
+}
+
+header nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+header nav a:hover {
+  color: orange;
+  text-transform: uppercase;
+}
+
+header nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-top: 0.1rem solid orange;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+header nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* About */
+.about {
+  padding: 1.4rem 7% 1.4rem;
+  letter-spacing: 2px;
+}
+
+.about .header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(45deg, #1a1a4a, #2a2a6a);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about .content {
+  padding: 0 2.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.about .content h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.about .content p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about .content .container-box {
+  border-radius: 0.3rem;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.about .content .container-box h3 {
+  background: linear-gradient(45deg, blue, red);
+  border-radius: 0.3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+.about .content .container-box p {
+  background: linear-gradient(45deg, #1a1a4a, #2a2a6a);
+  border-radius: 0.3rem;
+  padding: 1rem 1rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.hero {
+  background-image: url("dunia.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.section {
+  background: linear-gradient(45deg, #1a1a4a, #2a2a6a);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.hero-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+#hero-title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+#hero-subtitle {
+  font-size: 1.5rem;
+}
+.feature {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.feature img {
+  width: 100px;
+  margin-right: 20px;
+}
+button {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #ff8533;
+}
+
+/* Mobile Breakpoint*/
+@media screen and (max-width: 768px) {
+  .about .content {
+    display: grid;
+    gap: 1rem;
+  }
+}

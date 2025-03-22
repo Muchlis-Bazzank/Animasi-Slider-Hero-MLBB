@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Author -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Animasi Slider" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Muchlis" />
+
+    <!-- Judul Website -->
+    <title>Animasi Slider Hero MLBB</title>
+
+    <!-- Icon Website -->
+    <link rel="website icon" type="png" href="moba.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- Navbar Star -->
+    <header>
+      <nav>
+        <a href="index.html" onmousedown="home.play();">Home</a>
+        <a href="#" onmousedown="about.play();" class="active">About</a>
+        <a href="hero.html" onmousedown="contact.play();">Hero</a>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- About Start -->
+    <section class="about">
+      <div class="header">
+        <h1>Penjelasan Tentang Game MLBB</h1>
+      </div>
+
+      <div class="content">
+        <div class="container-box">
+          <h3>Mobile Legends : Bang Bang</h3>
+          <p>
+            Mobile Legends adalah game yang dikembangkan dan dirilis oleh
+            Moontoon developer. Game ini dapat dimainkan di platform mobile
+            Android dan iOS. Game MOBA satu ini sukses mencuri perhatian para
+            gamer di Indonesia sejak tahun 2016. Permainan ini dimainkan
+            sebanyak 10 orang yang terbagi menjadi 2 tim.
+
+            <br />
+            <br />
+
+            Mobile Legends: Bang Bang adalah permainan video seluler bergenre
+            Multiplayer Online Battle Arena (MOBA) yang dikembangkan dan
+            diterbitkan oleh Moonton, anak perusahaan dari ByteDance. Dirilis
+            pada tahun 2016, game ini makin populer di seluruh dunia, terutama
+            di wilayah Asia Tenggara, dan sejak itu telah melampaui 1 miliar
+            kali unduhan, dengan puncak pemain bulanan sebanyak 100 juta. Pada
+            tahun 2021, "Mobile Legends: Bang Bang" mencapai pendapatan kotor
+            sepanjang masa sebesar US$1 miliar dengan 44 persen pendapatannya
+            berasal dari luar Asia, menjadikannya game seluler teratas dari
+            genrenya dengan daya tarik paling global.
+
+            <br />
+            <br />
+
+            Mobile Legends adalah permainan MOBA yang dirancang untuk ponsel.
+            Kedua tim masing-masing berisi lima orang berjuang untuk mencapai
+            dan menghancurkan markas musuh sambil mempertahankan markas mereka
+            sendiri untuk mengendalikan tiga jalur, yang dikenal sebagai jalur
+            "Atas", "Tengah" dan "Bawah", yang menghubung ke setiap markas.
+
+            <br />
+            <br />
+
+            Di masing-masing tim, ada lima pemain yang mengendalikan avatar
+            sendiri-sendiri, yang dikenal sebagai "Hero", dari perangkat mereka
+            sendiri. Karakter lemah yang dikendalikan komputer disebut "Minion",
+            yang bersarang di markas tim lalu menyebar ke tiga jalur dan melawan
+            menara serta lawan yang menghadang. Mengumpulkan EXP berguna untuk
+            menaikkan level hero saat permainan berlangsung.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="hero">
+      <div class="hero-content">
+        <h2 id="hero-title">Dunia Game MOBA Seru!</h2>
+        <p id="hero-subtitle">Pertempuran 5V5 yang penuh dengan montage!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <h2>Apa itu Mobile Legends?</h2>
+        <p>
+          Mobile Legends: Bang Bang adalah game MOBA (Multiplayer Online Battle
+          Arena) populer yang dimainkan jutaan pemain di seluruh dunia. Dalam
+          game ini, pemain bertarung dalam tim 5 vs 5 untuk menghancurkan base
+          musuh.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Fitur Utama</h2>
+        <div class="feature">
+          <img src="hero.jpg" alt="Hero Icon" title="Hero Icon" />
+          <div>
+            <h3>Beragam Hero</h3>
+            <p>
+              Pilih dari ratusan hero dengan kemampuan unik dan gaya bermain
+              yang berbeda.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="mode.jpg" alt="Mode Icon" title="Mode Icon" />
+          <div>
+            <h3>Mode Permainan Variatif</h3>
+            <p>Rank, Classic, Brawl, dan masih banyak lagi!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Cara Bermain</h2>
+        <ol>
+          <li>Pilih hero yang cocok dengan gaya bermain Anda</li>
+          <li>Kerjasama dengan tim</li>
+          <li>Kuasai map dan strategi</li>
+          <li>Hancurkan tower musuh</li>
+          <li>Menangkan pertempuran!</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h2>Mulai Bermain Sekarang!</h2>
+        <button id="download-btn" onmousedown="audio.play();">
+          Download Sekarang
+        </button>
+      </div>
+    </div>
+
+    <!-- About End -->
+
+    <!-- My Script -->
+    <script src="about.js"></script>
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Audio/Music -->
+    <audio id="bgMusic" src="audio/chipsong.mp3" loop></audio>
+  </body>
+</html>

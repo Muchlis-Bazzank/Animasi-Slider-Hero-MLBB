@@ -1,0 +1,188 @@
+/*:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}*/
+
+/*html {
+  scroll-behavior: smooth;
+}*/
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: #0a0a2a;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* navbar */
+header {
+  width: 1200px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+
+.active {
+  color: orange;
+}
+
+.active::after {
+  content: "";
+  display: block;
+  transform: scaleX(1);
+}
+
+header nav {
+  display: flex;
+  gap: 3rem;
+  border-bottom: 1px solid orange;
+  position: fixed;
+}
+
+header nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+header nav a:hover {
+  color: orange;
+  text-transform: uppercase;
+}
+
+header nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-top: 0.1rem solid orange;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+header nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* Hero */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(45deg, #1a1a4a, #2a2a6a);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* .search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+} */
+
+.role-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.role-btn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #2a2a6a, #3a3a8a);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.role-btn.active {
+  background: linear-gradient(45deg, #4a4aaa, #5a5aca);
+}
+
+.heroes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero-card {
+  background: linear-gradient(45deg, #2a2a6a, #3a3a8a);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #4a4aaa;
+}
+
+.hero-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.hero-role {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.selected {
+  border: 3px solid gold;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Mobile Breakpoint*/
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 1rem;
+  }
+}
