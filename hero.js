@@ -193,7 +193,7 @@ const heroes = [
   {
     name: "Faramis",
     role: "support",
-    image: "/faramis.png",
+    image: "faramis.png",
   },
   {
     name: "Floryn",
